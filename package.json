@@ -1,0 +1,12 @@
+{
+  "name": "rfid-attendance-system",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && mkdir -p dist/src && cp src/index.html src/styles.css dist/src/",
+    "typecheck": "tsc --noEmit",
+    "start": "node server/index.js",
+    "dev": "npm run build && node server/index.js"
+  }
+}
